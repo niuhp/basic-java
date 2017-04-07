@@ -1,4 +1,4 @@
-package com.niuhp.basic.java.pattern.singleton;
+package com.niuhp.basic.pattern.singleton;
 
 /**
  * Created by niuhaipeng on 2017/4/4.
