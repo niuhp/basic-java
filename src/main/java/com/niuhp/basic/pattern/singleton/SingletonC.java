@@ -5,7 +5,7 @@ package com.niuhp.basic.pattern.singleton;
  */
 public class SingletonC {
 
-  private static SingletonC instance = null;
+  private static volatile SingletonC instance = null;
 
   private SingletonC() {
   }

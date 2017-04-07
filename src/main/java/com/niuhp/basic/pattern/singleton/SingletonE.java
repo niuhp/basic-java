@@ -5,7 +5,7 @@ package com.niuhp.basic.pattern.singleton;
  */
 public class SingletonE {
 
-  private static SingletonE instance = null;
+  private static volatile SingletonE instance = null;
   private static final Object lockObj = new Object();
 
   private SingletonE() {

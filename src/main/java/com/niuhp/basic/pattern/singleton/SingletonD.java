@@ -5,7 +5,7 @@ package com.niuhp.basic.pattern.singleton;
  */
 public class SingletonD {
 
-  private static SingletonD instance = null;
+  private static volatile SingletonD instance = null;
   private static final Object lockObj = new Object();
 
   private SingletonD() {
