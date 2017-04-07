@@ -21,4 +21,8 @@ public class SingletonH {
     }
     return instance;
   }
+
+  public int getStatus() {
+    return status;
+  }
 }
