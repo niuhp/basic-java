@@ -5,15 +5,20 @@ package com.niuhp.basic.pattern.singleton;
  */
 public class SingletonH {
 
+  private static ThreadLocal<SingletonH> instanceLocal = new ThreadLocal<SingletonH>();
+
+  private int status;
+
   private SingletonH() {
-  }
-
-  private static class SingletonHolder {
-
-    static final ThreadLocal<SingletonH> instanceThreadLocal = new ThreadLocal<SingletonH>();
+    status = (int) (Math.random() * 100);
   }
 
   public static SingletonH getInstance() {
-    return SingletonHolder.instanceThreadLocal.get();
+    SingletonH instance = instanceLocal.get();
+    if (instance == null) {
+      instance = new SingletonH();
+      instanceLocal.set(instance);
+    }
+    return instance;
   }
 }
