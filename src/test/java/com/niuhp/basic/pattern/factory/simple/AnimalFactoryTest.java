@@ -1,4 +1,4 @@
-package com.niuhp.basic.pattern.factory.sample;
+package com.niuhp.basic.pattern.factory.simple;
 
 import com.niuhp.basic.pattern.factory.Animal;
 
