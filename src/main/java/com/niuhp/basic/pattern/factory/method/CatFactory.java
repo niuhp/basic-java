@@ -1,4 +1,4 @@
-package com.niuhp.basic.pattern.factory.abs;
+package com.niuhp.basic.pattern.factory.method;
 
 import com.niuhp.basic.pattern.factory.Animal;
 import com.niuhp.basic.pattern.factory.Cat;
