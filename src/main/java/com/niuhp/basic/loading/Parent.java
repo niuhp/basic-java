@@ -90,7 +90,7 @@ public class Parent {
   public static void main(String[] args) {
     Parent parent = new Parent();
     parent.innerA();
-
-    Parent.innerB();
+//
+//    Parent.innerB();
   }
 }
