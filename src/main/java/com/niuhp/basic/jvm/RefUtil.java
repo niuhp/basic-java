@@ -8,7 +8,7 @@ public class RefUtil {
   private RefUtil() {
   }
 
-  public static <T> List<Integer> getNotNullIndex(List<? extends Reference<T>> list) {
+  public static <T> List<Integer> getNotNullIndexList(List<? extends Reference<T>> list) {
     List<Integer> indexList = new ArrayList<>();
     if (list != null) {
       for (int index = 0; index < list.size(); index++) {
