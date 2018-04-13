@@ -9,7 +9,7 @@ import java.net.URLClassLoader;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ConstantGc {
+public class ClassGc {
   public static void main(String[] args) throws MalformedURLException {
     Set<Class<?>> classSet = new HashSet<>();
     for (Integer i = 0; i < 10000; i++) {
