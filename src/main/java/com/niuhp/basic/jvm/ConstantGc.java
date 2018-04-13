@@ -12,7 +12,7 @@ import java.util.Set;
 public class ConstantGc {
   public static void main(String[] args) throws MalformedURLException {
     Set<Class<?>> classSet = new HashSet<>();
-    for (Integer i = 0; i < 100000; i++) {
+    for (Integer i = 0; i < 10000; i++) {
       URL url = new File("").toURI().toURL();
       URL[] urls = new URL[]{url};
       ClassLoader loader = new URLClassLoader(urls);
@@ -21,6 +21,8 @@ public class ConstantGc {
       classSet.add(obj.getClass());
     }
     classSet.clear();
+    System.out.println("---------- call gc start -------------");
     System.gc();
+    System.out.println("---------- call gc start -------------");
   }
 }
