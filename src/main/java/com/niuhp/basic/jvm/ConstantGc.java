@@ -23,6 +23,6 @@ public class ConstantGc {
     classSet.clear();
     System.out.println("---------- call gc start -------------");
     System.gc();
-    System.out.println("---------- call gc start -------------");
+    System.out.println("---------- call gc end -------------");
   }
 }
