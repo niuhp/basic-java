@@ -1,7 +1,7 @@
 package com.niuhp.basic.jvm;
 
 public class MemAllocation {
-  private static final int _1MB = 1021 * 1024;
+  private static final int _1MB = 1024 * 1024;
 
   public static void main(String[] args) throws InterruptedException {
     byte[] _2mb_1 = tryAllocation(2);
