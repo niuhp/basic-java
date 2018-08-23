@@ -1,29 +1,27 @@
-package com.niuhp.basic.alg.pc;
+package com.niuhp.basic.permutation;
 
-public class DictSeq {
-  private int[] current;
+public class DictOrdinalUtil {
 
-  public DictSeq(int[] current) {
-    this.current = current;
+  private DictOrdinalUtil() {
   }
 
-  public int[] next() {
-    int lastPositive = findLastPositive(current);
+  public static int[] nextPermutation(int[] array) {
+    int lastPositive = findLastPositive(array);
     if (lastPositive == -1) {
       return null;
     }
-    int[] next = new int[current.length];
+    int[] next = new int[array.length];
     for (int i = 0; i < lastPositive; i++) {
-      next[i] = current[i];
+      next[i] = array[i];
     }
 
-    int lastLarge = findLastLarge(current, lastPositive);
-    next[lastPositive] = current[lastLarge];
+    int lastLarge = findLastLarge(array, lastPositive);
+    next[lastPositive] = array[lastLarge];
     for (int i = lastPositive + 1; i < next.length; i++) {
-      if (i == current.length + lastPositive - lastLarge) {
-        next[i] = current[lastPositive];
+      if (i == array.length + lastPositive - lastLarge) {
+        next[i] = array[lastPositive];
       } else {
-        next[i] = current[current.length + lastPositive - i];
+        next[i] = array[array.length + lastPositive - i];
       }
     }
     return next;
