@@ -6,7 +6,7 @@ public class DictOrdinalTest {
 
   @Test
   public void testDictSeq() {
-    int[] array = {1, 2, 3, 4};
+    int[] array = {2, 3, 5, 7, 9};
     while (array != null) {
       printArray(array);
       array = DictOrdinalUtil.nextPermutation(array);
