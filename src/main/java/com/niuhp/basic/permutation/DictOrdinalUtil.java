@@ -11,9 +11,7 @@ public class DictOrdinalUtil {
       return null;
     }
     int[] next = new int[array.length];
-    for (int i = 0; i < lastPositive; i++) {
-      next[i] = array[i];
-    }
+    System.arraycopy(array, 0, next, 0, lastPositive);
 
     int lastLarge = findLastLarge(array, lastPositive);
     next[lastPositive] = array[lastLarge];
