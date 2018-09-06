@@ -37,9 +37,4 @@ public class NeighbourExchangeV1 {
     return list;
   }
 
-
-  public static void main(String[] args) {
-    List<int[]> list = getAllPermutation(new int[]{1, 2, 3, 4});
-    System.out.println(list);
-  }
 }
