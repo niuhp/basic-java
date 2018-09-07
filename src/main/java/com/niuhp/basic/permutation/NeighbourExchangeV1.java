@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class NeighbourExchangeV1 {
+  private NeighbourExchangeV1() {
+  }
 
   public static List<int[]> getAllPermutation(int[] arr) {
     if (arr.length == 1) {
