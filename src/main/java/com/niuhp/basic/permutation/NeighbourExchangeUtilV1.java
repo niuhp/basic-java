@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class NeighbourExchangeV1 {
-  private NeighbourExchangeV1() {
+public class NeighbourExchangeUtilV1 {
+  private NeighbourExchangeUtilV1() {
   }
 
   public static List<int[]> getAllPermutation(int[] arr) {
