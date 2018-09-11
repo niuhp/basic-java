@@ -10,7 +10,7 @@ public class NeighbourExchangeUtilV2 {
   }
 
   public static List<int[]> getAllPermutation(int[] arr) {
-    Arrays.sort(arr);
+
     List<int[]> result = new ArrayList<>();
     result.add(arr);
 
